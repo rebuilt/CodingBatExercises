@@ -1,4 +1,4 @@
-<h1> List of files included in the repository with a short description of exercise prompt and examples </h1>
+<h1> List of files with a short description of exercise prompt and examples </h1>
 <h2> ScoresIncreasing.java </h2>
 
 <p>
