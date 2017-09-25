@@ -1,4 +1,3 @@
-package recursion1;
 /*
  * Given a string, compute recursively (no loops) the number of "11" substrings in the string. The "11" substrings should not overlap.
 
@@ -7,6 +6,7 @@ package recursion1;
  count11("111") → 1
  */
 
+package recursion1;
 
 public class Count11{
 	public static void main(String[] args){

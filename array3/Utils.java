@@ -1,3 +1,7 @@
+/*
+Utility methods
+
+*/
 package array3;
 
 public class Utils {
