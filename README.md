@@ -11,6 +11,32 @@
 
 </li></ul>
 </p>
+<h2>SeriesUp.java</h2>
+<p>
+  Given n>=0, create an array with the pattern {1,    1, 2,    1, 2, 3,   ... 1, 2, 3 .. n} (spaces added to show the grouping). Note that the length of the array will be 1 + 2 + 3 ... + n, which is known to sum to exactly n(n + 1)/2.
+
+
+<ul>
+<li>seriesUp(3) → [1, 1, 2, 1, 2, 3]
+</li><li>seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
+</li><li>seriesUp(2) → [1, 1, 2]
+
+
+</li></ul>
+</p>
+<h2>SquareUp.java</h2>
+<p>
+  Given n>=0, create an array length nn with the following pattern, shown here for n=3 : {0, 0, 1,    0, 2, 1,    3, 2, 1} (spaces added to show the 3 groups).
+
+
+<ul>
+<li>squareUp(3) → [0, 0, 1, 0, 2, 1, 3, 2, 1]
+</li><li>squareUp(2) → [0, 1, 2, 1]
+</li><li>squareUp(4) → [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1]
+
+
+</li></ul>
+</p>
 <h2>Utils.java</h2>
 <p>
 Utility methods
@@ -19,6 +45,19 @@ Utility methods
 
 <ul>
 </ul>
+</p>
+<h2>Fix45.java</h2>
+<p>
+  (This is a slightly harder version of the fix34 problem.) Return an array that contains exactly the same numbers as the given array, but rearranged so that every 4 is immediately followed by a 5. Do not move the 4's, but every other number may move. The array contains the same number of 4's and 5's, and every 4 has a number after it that is not a 4. In this version, 5's may appear anywhere in the original array.
+
+
+<ul>
+<li>fix45([5, 4, 9, 4, 9, 5]) → [9, 4, 5, 4, 5, 9]
+</li><li>fix45([1, 4, 1, 5]) → [1, 4, 5, 1]
+</li><li>fix45([1, 4, 1, 5, 5, 4, 1]) → [1, 4, 5, 1, 1, 4, 5]
+
+
+</li></ul>
 </p>
 <h2>Fix34.java</h2>
 <p>
@@ -33,19 +72,6 @@ Utility methods
 
 </li></ul>
 </p>
-<h2>SeriesUp.java</h2>
-<p>
-  Given n>=0, create an array with the pattern {1,    1, 2,    1, 2, 3,   ... 1, 2, 3 .. n} (spaces added to show the grouping). Note that the length of the array will be 1 + 2 + 3 ... + n, which is known to sum to exactly n(n + 1)/2.
-
-
-<ul>
-<li>seriesUp(3) → [1, 1, 2, 1, 2, 3]
-</li><li>seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
-</li><li>seriesUp(2) → [1, 1, 2]
-
-
-</li></ul>
-</p>
 <h2>CountClumps.java</h2>
 <p>
   Say that a "clump" in an array is a series of 2 or more adjacent elements of the same value. Return the number of clumps in the given array.
@@ -55,19 +81,6 @@ Utility methods
 <li>countClumps([1, 2, 2, 3, 4, 4]) → 2
 </li><li>countClumps([1, 1, 2, 1, 1]) → 2
 </li><li>countClumps([1, 1, 1, 1, 1]) → 1
-
-
-</li></ul>
-</p>
-<h2>MaxMirror.java</h2>
-<p>
-  We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, the same group appears in reverse order. For example, the largest mirror section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). Return the size of the largest mirror section found in the given array.
-
-
-<ul>
-<li>maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → 3
-</li><li>maxMirror([1, 2, 1, 4]) → 3
-</li><li>maxMirror([7, 1, 2, 9, 7, 2, 1]) → 2
 
 
 </li></ul>
@@ -124,32 +137,6 @@ Utility methods
 
 </li></ul>
 </p>
-<h2>SquareUp.java</h2>
-<p>
-  Given n>=0, create an array length nn with the following pattern, shown here for n=3 : {0, 0, 1,    0, 2, 1,    3, 2, 1} (spaces added to show the 3 groups).
-
-
-<ul>
-<li>squareUp(3) → [0, 0, 1, 0, 2, 1, 3, 2, 1]
-</li><li>squareUp(2) → [0, 1, 2, 1]
-</li><li>squareUp(4) → [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1]
-
-
-</li></ul>
-</p>
-<h2>Fix45.java</h2>
-<p>
-  (This is a slightly harder version of the fix34 problem.) Return an array that contains exactly the same numbers as the given array, but rearranged so that every 4 is immediately followed by a 5. Do not move the 4's, but every other number may move. The array contains the same number of 4's and 5's, and every 4 has a number after it that is not a 4. In this version, 5's may appear anywhere in the original array.
-
-
-<ul>
-<li>fix45([5, 4, 9, 4, 9, 5]) → [9, 4, 5, 4, 5, 9]
-</li><li>fix45([1, 4, 1, 5]) → [1, 4, 5, 1]
-</li><li>fix45([1, 4, 1, 5, 5, 4, 1]) → [1, 4, 5, 1, 1, 4, 5]
-
-
-</li></ul>
-</p>
 <h2>MaxBlock.java</h2>
 <p>
   Given a string, return the length of the largest "block" in the string. A block is a run of adjacent chars that are the same.
@@ -202,6 +189,20 @@ Utility methods
 
 </li></ul>
 </p>
+<h2>DividesSelf.java</h2>
+<p>
+ 
+  We'll say that a positive int divides itself if every digit in the number divides into the number evenly. So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly. We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. Note: use % to get the rightmost digit, and / to discard the rightmost digit.
+
+
+<ul>
+<li>dividesSelf(128) → true
+</li><li>dividesSelf(12) → true
+</li><li>dividesSelf(120) → false
+
+
+</li></ul>
+</p>
 <h2>UserCompare.java</h2>
 <p>
   We have data for two users, A and B, each with a String name and an int id. The goal is to order the users such as for sorting. Return -1 if A comes before B, 1 if A comes after B, and 0 if they are the same. Order first by the string names, and then by the id numbers if the names are the same. Note: with Strings str1.compareTo(str2) returns an int value which is negative/0/positive to indicate how str1 is ordered to str2 (the value is not limited to -1/0/1). (On the AP, there would be two User objects, but here the code simply takes the two strings and two ints directly. The code logic is the same.)
@@ -227,20 +228,6 @@ Utility methods
 
 
 </li></ul>
-</p>
-<h2>DivideSelf.java</h2>
-<p>
- 
-  We'll say that a positive int divides itself if every digit in the number divides into the number evenly. So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly. We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. Note: use % to get the rightmost digit, and / to discard the rightmost digit.
-
-dividesSelf(128) → true
-dividesSelf(12) → true
-dividesSelf(120) → false
-
-
-
-<ul>
-</ul>
 </p>
 <h2>WordsCount.java</h2>
 <p>
@@ -289,6 +276,19 @@ int average(int[] scores, int start, int end) { which computes the average of th
 <li>wordsWithoutList(["a", "bb", "b", "ccc"], 1) → ["bb", "ccc"]
 </li><li>wordsWithoutList(["a", "bb", "b", "ccc"], 3) → ["a", "bb", "b"]
 </li><li>wordsWithoutList(["a", "bb", "b", "ccc"], 4) → ["a", "bb", "b", "ccc"]
+
+
+</li></ul>
+</p>
+<h2>MaxMirror.java</h2>
+<p>
+  We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, the same group appears in reverse order. For example, the largest mirror section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). Return the size of the largest mirror section found in the given array.
+
+
+<ul>
+<li>maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → 3
+</li><li>maxMirror([1, 2, 1, 4]) → 3
+</li><li>maxMirror([7, 1, 2, 9, 7, 2, 1]) → 2
 
 
 </li></ul>
@@ -426,15 +426,15 @@ int average(int[] scores, int start, int end) { which computes the average of th
 </p>
 <h2>PairStar.java</h2>
 <p>
-  Given a string, compute recursively a new string where all the adjacent chars are now separated by a "".
-
-allStar("hello") → "hello"
-allStar("abc") → "abc"
-allStar("ab") → "ab"
+Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a " ".
 
 
 <ul>
-</ul>
+<li>pairStar("hello") → "hel lo"
+</li><li>pairStar("xxyy") → "x xy y"
+</li><li>pairStar("aaaa") → "a a a a"
+
+</li></ul>
 </p>
 <h2>CountAbc.java</h2>
 <p> Count recursively the total number of "abc" and "aba" substrings that appear in the given string.
@@ -462,9 +462,9 @@ allStar("ab") → "ab"
 </p>
 <h2>Triangle.java</h2>
 <p>
-  We have 
+  We have Triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a 
 <ul>
-<li>triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a </li><li>triangle with the given number of rows.
+<li>triangle with the given number of rows.
 
 </li><li>triangle(0) → 0
 </li><li>triangle(1) → 1
@@ -488,20 +488,52 @@ allStar("ab") → "ab"
 </p>
 <h2>CountPairs.java</h2>
 <p>
-We'll say that a "pair" in a string is two instances of a char separated by a char. So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. Recursively compute the number of pairs in the given string.
- 
+
+ We'll say that a "pair" in a string is two instances of a char separated by a char. So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. Recursively compute the number of pairs in the given string.
+
 
 <ul>
-</ul>
+<li>countPairs("axa") → 1
+</li><li>countPairs("axax") → 2
+</li><li>countPairs("axbx") → 1
+
+ 
+public class CountPairs{
+
+	public static void main(String[] args){
+		String str = "axbxbxb";
+		System.out.print(</li><li>countPairs(str));
+
+	}
+
+	public static int </li><li>countPairs(String str) {
+		int length  = str.length();
+		if( length <= 2 ){
+			return 0;
+		}
+
+		if(str.charAt(0) == str.charAt(2)){
+			return 1 + </li><li>countPairs(str.substring(1,length));
+		} 
+
+		return </li><li>countPairs(str.substring(1, length));
+	}
+
+}
+</li></ul>
 </p>
 <h2>EndX.java</h2>
 <p>
-  Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string.
- 
+ Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string.
 
 
 <ul>
-</ul>
+<li>endX("xxre") → "rexx"
+</li><li>endX("xxhixx") → "hixxxx"
+</li><li>endX("xhixhix") → "hihixxx"
+ 
+
+</li></ul>
 </p>
 <h2>CountX.java</h2>
 <p>

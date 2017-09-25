@@ -9,7 +9,7 @@ dividesSelf(120) → false
 
 package ap1;
 
-public class DivideSelf {
+public class DividesSelf {
 
 	public static void main(String[] args) {
 		System.out.println(dividesSelf(128));

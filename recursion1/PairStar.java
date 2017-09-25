@@ -1,9 +1,9 @@
 /*
- * Given a string, compute recursively a new string where all the adjacent chars are now separated by a "*".
+Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a " ".
 
-allStar("hello") → "h*e*l*l*o"
-allStar("abc") → "a*b*c"
-allStar("ab") → "a*b"
+pairStar("hello") → "hel lo"
+pairStar("xxyy") → "x xy y"
+pairStar("aaaa") → "a a a a"
 */
 package recursion1;
 public class PairStar{
@@ -21,7 +21,7 @@ public class PairStar{
 			return str;
 		}
 		if(str.charAt(0) == str.charAt(1)){
-			return str.substring(0,1) + "*"+ pairStar(str.substring(1,str.length() ));
+			return str.substring(0,1) + " "+ pairStar(str.substring(1,str.length() ));
 
 			
 		}
