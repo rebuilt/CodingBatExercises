@@ -8,6 +8,8 @@ fix34([3, 2, 2, 4]) → [3, 4, 2, 2]
 
 package array3;
 
+import utils.Utils;
+
 public class Fix34 {
 
 	public static void main(String[] args) {

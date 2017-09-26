@@ -7,7 +7,7 @@ equalIsNot("noisxxnotyynotxisi") → true
 */
 
 package string3;
-import array3.Utils;
+import utils.Utils;
 
 public class EqualIsNot {
 

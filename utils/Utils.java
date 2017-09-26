@@ -2,7 +2,7 @@
 Utility methods
 
 */
-package array3;
+package utils;
 
 public class Utils {
 

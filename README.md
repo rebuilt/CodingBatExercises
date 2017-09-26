@@ -1,4 +1,30 @@
-<h1>Description of exercises</h1><h2>LinearIn.java</h2>
+<h1>Description of exercises</h1><h2>SeriesUp.java</h2>
+<p>
+  Given n>=0, create an array with the pattern {1,    1, 2,    1, 2, 3,   ... 1, 2, 3 .. n} (spaces added to show the grouping). Note that the length of the array will be 1 + 2 + 3 ... + n, which is known to sum to exactly n(n + 1)/2.
+
+
+<ul>
+<li>seriesUp(3) → [1, 1, 2, 1, 2, 3]
+</li><li>seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
+</li><li>seriesUp(2) → [1, 1, 2]
+
+
+</li></ul>
+</p>
+<h2>MaxMirror.java</h2>
+<p>
+  We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, the same group appears in reverse order. For example, the largest mirror section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). Return the size of the largest mirror section found in the given array.
+
+
+<ul>
+<li>maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → 3
+</li><li>maxMirror([1, 2, 1, 4]) → 3
+</li><li>maxMirror([7, 1, 2, 9, 7, 2, 1]) → 2
+
+
+</li></ul>
+</p>
+<h2>LinearIn.java</h2>
 <p>
   Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner appear in outer. The best solution makes only a single "linear" pass of both arrays, taking advantage of the fact that both arrays are already in sorted order.
 
@@ -11,15 +37,15 @@
 
 </li></ul>
 </p>
-<h2>SeriesUp.java</h2>
+<h2>Fix45.java</h2>
 <p>
-  Given n>=0, create an array with the pattern {1,    1, 2,    1, 2, 3,   ... 1, 2, 3 .. n} (spaces added to show the grouping). Note that the length of the array will be 1 + 2 + 3 ... + n, which is known to sum to exactly n(n + 1)/2.
+  (This is a slightly harder version of the fix34 problem.) Return an array that contains exactly the same numbers as the given array, but rearranged so that every 4 is immediately followed by a 5. Do not move the 4's, but every other number may move. The array contains the same number of 4's and 5's, and every 4 has a number after it that is not a 4. In this version, 5's may appear anywhere in the original array.
 
 
 <ul>
-<li>seriesUp(3) → [1, 1, 2, 1, 2, 3]
-</li><li>seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
-</li><li>seriesUp(2) → [1, 1, 2]
+<li>fix45([5, 4, 9, 4, 9, 5]) → [9, 4, 5, 4, 5, 9]
+</li><li>fix45([1, 4, 1, 5]) → [1, 4, 5, 1]
+</li><li>fix45([1, 4, 1, 5, 5, 4, 1]) → [1, 4, 5, 1, 1, 4, 5]
 
 
 </li></ul>
@@ -33,28 +59,6 @@
 <li>squareUp(3) → [0, 0, 1, 0, 2, 1, 3, 2, 1]
 </li><li>squareUp(2) → [0, 1, 2, 1]
 </li><li>squareUp(4) → [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1]
-
-
-</li></ul>
-</p>
-<h2>Utils.java</h2>
-<p>
-Utility methods
-
-
-
-<ul>
-</ul>
-</p>
-<h2>Fix45.java</h2>
-<p>
-  (This is a slightly harder version of the fix34 problem.) Return an array that contains exactly the same numbers as the given array, but rearranged so that every 4 is immediately followed by a 5. Do not move the 4's, but every other number may move. The array contains the same number of 4's and 5's, and every 4 has a number after it that is not a 4. In this version, 5's may appear anywhere in the original array.
-
-
-<ul>
-<li>fix45([5, 4, 9, 4, 9, 5]) → [9, 4, 5, 4, 5, 9]
-</li><li>fix45([1, 4, 1, 5]) → [1, 4, 5, 1]
-</li><li>fix45([1, 4, 1, 5, 5, 4, 1]) → [1, 4, 5, 1, 1, 4, 5]
 
 
 </li></ul>
@@ -280,19 +284,6 @@ int average(int[] scores, int start, int end) { which computes the average of th
 
 </li></ul>
 </p>
-<h2>MaxMirror.java</h2>
-<p>
-  We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, the same group appears in reverse order. For example, the largest mirror section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). Return the size of the largest mirror section found in the given array.
-
-
-<ul>
-<li>maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → 3
-</li><li>maxMirror([1, 2, 1, 4]) → 3
-</li><li>maxMirror([7, 1, 2, 9, 7, 2, 1]) → 2
-
-
-</li></ul>
-</p>
 <h2>WordsWithout.java</h2>
 <p>
   Given an array of strings, return a new array without the strings that are equal to the target string. One approach is to count the occurrences of the target string, make a new array of the correct length, and then copy over the correct strings.
@@ -359,6 +350,31 @@ int average(int[] scores, int start, int end) { which computes the average of th
 
 </li></ul>
 </p>
+<h2>ScoreUp.java</h2>
+<p>
+  The "key" array is an array containing the correct answers to an exam, like {"a", "a", "b", "b"}. the "answers" array contains a student's answers, with "?" representing a question left blank. The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer.
+
+
+<ul>
+<li>scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) → 6
+</li><li>scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "c"]) → 11
+</li><li>scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "b"]) → 16
+
+
+</li></ul>
+</p>
+<h2>CreateReadme.java</h2>
+<p>
+  Creates a README.md. 
+  
+   Recurses through all folders 
+   Parses comments at top of each file
+   Writes out README.md
+ 
+
+<ul>
+</ul>
+</p>
 <h2>ScoresClump.java</h2>
 <p>
   Given an array of scores sorted in increasing order, return true if the array contains 3 adjacent scores that differ from each other by at most 2, such as with {3, 4, 5} or {3, 5, 5}.
@@ -372,18 +388,14 @@ int average(int[] scores, int start, int end) { which computes the average of th
 
 </li></ul>
 </p>
-<h2>ScoreUp.java</h2>
+<h2>Utils.java</h2>
 <p>
-  The "key" array is an array containing the correct answers to an exam, like {"a", "a", "b", "b"}. the "answers" array contains a student's answers, with "?" representing a question left blank. The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer.
+Utility methods
+
 
 
 <ul>
-<li>scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) → 6
-</li><li>scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "c"]) → 11
-</li><li>scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "b"]) → 16
-
-
-</li></ul>
+</ul>
 </p>
 <h2>Count8.java</h2>
 <p>
@@ -462,11 +474,11 @@ Given a string, compute recursively a new string where identical chars that are 
 </p>
 <h2>Triangle.java</h2>
 <p>
-  We have Triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a 
-<ul>
-<li>triangle with the given number of rows.
+  We have Triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a Triangle with the given number of rows.
 
-</li><li>triangle(0) → 0
+
+<ul>
+<li>triangle(0) → 0
 </li><li>triangle(1) → 1
 </li><li>triangle(2) → 3
 
@@ -497,29 +509,6 @@ Given a string, compute recursively a new string where identical chars that are 
 </li><li>countPairs("axax") → 2
 </li><li>countPairs("axbx") → 1
 
- 
-public class CountPairs{
-
-	public static void main(String[] args){
-		String str = "axbxbxb";
-		System.out.print(</li><li>countPairs(str));
-
-	}
-
-	public static int </li><li>countPairs(String str) {
-		int length  = str.length();
-		if( length <= 2 ){
-			return 0;
-		}
-
-		if(str.charAt(0) == str.charAt(2)){
-			return 1 + </li><li>countPairs(str.substring(1,length));
-		} 
-
-		return </li><li>countPairs(str.substring(1, length));
-	}
-
-}
 </li></ul>
 </p>
 <h2>EndX.java</h2>
@@ -547,30 +536,19 @@ public class CountPairs{
 
 </li></ul>
 </p>
-<h2>GroupNoAdj.java</h2>
+<h2>Has271.java</h2>
 <p>
-
-  Given an array of ints, is it possible to choose a group of some of the ints, such that the group sums to the given target with this additional constraint: If a value in the array is chosen to be in the group, the value immediately following it in the array must not be chosen. (No loops needed.)
-
  
+  Given an array of ints, return true if it contains a 2, 7, 1 pattern: a value, followed by the value plus 5, followed by the value minus 1. Additionally the 271 counts even if the "1" differs by 2 or less from the correct value.
+
+
 <ul>
-<li>groupNoAdj(0, [2, 5, 10, 4], 12) → true
- </li><li>groupNoAdj(0, [2, 5, 10, 4], 14) → false
- </li><li>groupNoAdj(0, [2, 5, 10, 4], 7) → false
- 
-</li></ul>
-</p>
-<h2>GroupSum6.java</h2>
-<p>
+<li>has271([1, 2, 7, 1]) → true
+</li><li>has271([1, 2, 8, 1]) → false
+</li><li>has271([2, 7, 1]) → true
 
-  Given an array of ints, is it possible to choose a group of some of the ints, beginning at the start index, such that the group sums to the given target? However, with the additional constraint that all 6's must be chosen. (No loops needed.)
 
- 
-<ul>
-<li>groupSum6(0, [5, 6, 2], 8) → true
- </li><li>groupSum6(0, [5, 6, 2], 9) → false
- </li><li>groupSum6(0, [5, 6, 2], 7) → false
- 
+
 </li></ul>
 </p>
 

@@ -6,7 +6,8 @@ countPairs("axa") → 1
 countPairs("axax") → 2
 countPairs("axbx") → 1
 */
- 
+package recursion1;
+
 public class CountPairs{
 
 	public static void main(String[] args){

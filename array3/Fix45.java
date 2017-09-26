@@ -8,6 +8,8 @@ fix45([1, 4, 1, 5, 5, 4, 1]) → [1, 4, 5, 1, 1, 4, 5]
 
 package array3;
 
+import utils.Utils;
+
 public class Fix45 {
 
 	public static void main(String[] args) {

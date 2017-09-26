@@ -7,6 +7,9 @@ seriesUp(2) → [1, 1, 2]
 */
 
 package array3;
+
+import utils.Utils;
+
 public class SeriesUp {
 
 	public static void main(String[] args) {

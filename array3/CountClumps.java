@@ -7,6 +7,9 @@ countClumps([1, 1, 1, 1, 1]) → 1
 */
 
 package array3;
+
+import utils.Utils;
+
 public class CountClumps {
 
 	public static void main(String[] args) {

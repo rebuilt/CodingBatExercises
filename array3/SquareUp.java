@@ -7,6 +7,9 @@ squareUp(4) → [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1]
 */
 
 package array3;
+
+import utils.Utils;
+
 public class SquareUp {
 
 	public static void main(String[] args) {
